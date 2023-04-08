@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Строка наоборот</title>
+</head>
+<body>
+<form method="post">
+    {% csrf_token %}
+    <label for="string">Строка:</label>
+    <input name="string" required><br><br>
+    <input type="submit" value="Перевернуть">
+</form>
+<a href="/main">На главную</a>
+</body>
+</html>

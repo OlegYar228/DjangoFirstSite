@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post">
+    {% csrf_token %}
+    <label for="number1">Первое число:</label>
+    <input type="number" name="number1" required><br><br>
+    <label for="number2">Второе число:</label>
+    <input type="number" name="number2" required><br><br>
+    <input type="submit" value="Прибавить">
+</form>
+<a href="/main">На главную</a>
+</body>
+</html>
